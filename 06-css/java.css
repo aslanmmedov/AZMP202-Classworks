@@ -1,0 +1,28 @@
+.first-h1{
+    color:blue;
+    text-align: center;
+}
+.container{
+    padding:400px;
+    padding-top:0;
+}
+.first{
+    border:2px solid red;
+    background-color: lightgreen;
+    text-align: center;
+}
+.second{
+    border:2px solid red;
+    background-color: #ddaefa;
+    text-align: center;
+}
+.third{
+    border:2px solid red;
+    background-color: rgb(155, 55, 128);
+    text-align: center;
+}
+.fourth{
+    border:2px solid red;
+    background-color: hsl(60, 22%, 50%);
+    text-align: center;
+}

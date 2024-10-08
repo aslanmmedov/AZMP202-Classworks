@@ -1,0 +1,17 @@
+
+.container{
+    padding:400px;
+    padding-top:0;
+    padding-bottom:0;
+    margin-left:300px;
+    margin-right:300px;
+    background-color:antiquewhite;
+}
+.image{
+    padding:150px;
+    padding-top:0;
+    padding-bottom:0;
+}
+.parag h2{
+    color:red;
+}
