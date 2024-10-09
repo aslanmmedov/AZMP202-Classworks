@@ -1,0 +1,45 @@
+
+.container{
+    width:100vw;
+    height:70vh;
+    background-image: url(https://media.istockphoto.com/id/1398323376/vector/rainbow-colors-gradient-defocused-blurred-motion-abstract-background-vector.jpg?s=612x612&w=0&k=20&c=CTp_f8JNejW3r9e-TQZwf-DEi2ulTJM0W_GDJz1FBAg=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar h3{
+    color:white;
+    margin-left:100px;
+}
+.navbar{
+    display:flex;
+
+}
+.list{
+    margin-left:1100px;
+}
+.list ul{
+    display:flex;
+}
+.list ul li{
+    margin:9px 20px; 
+}
+.list ul li .link{
+    text-decoration: none;
+    color:white;
+}
+.list ul li .link:hover{
+    color:pink;
+}
+
+.section1{
+    text-align:center;
+    margin-top:180px;
+    color:white;
+}
+h1{
+    font-size:80px;
+}
+p{
+    font-size:30px;
+}

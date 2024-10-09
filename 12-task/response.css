@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.big-container {
+    background-color: purple;
+    width: 60%;
+    height: 500px;
+    text-align: center; 
+    margin:50px auto;
+    border-radius:20px;
+}
+.container01{
+    display:flex;
+    width:100%;
+    margin:15px 85px 20px 95px ;
+}
+.firsth2{
+    color:white;
+    margin-top:25px;
+}
+.firsth1{
+    color:white;
+    margin-top:30px;
+}
+.insider1{
+    border-radius:15px;
+    background-color: #fff;
+    height:350px;
+    width:300px;
+    margin:10px;
+}
+/*.insider1:hover{
+    transition: 0.5s;
+    width:320px;
+    height:370px;
+    margin-left:50px;
+}*/
+.insider1 .image{       
+    width:140px;
+    height:140px;
+    margin:20px auto;
+    border-radius:50%;
+}
+.imgclass{
+    width:140px;
+    height:140px;
+    border:3px solid purple;
+    border-radius:50%;
+}
+.ad{
+    color:purple;
+    margin-bottom:10px;
+}
+p{
+    margin-bottom:15px;
+}
+.container2{
+    display:flex;
+    margin:10px 40px;   
+}
+.button1{
+    height:45px;
+    width:100px;
+    margin-right:10px;
+    border-color:purple;
+    border-radius:10px;
+    color:purple;
+}
+.button1:hover{
+    
+    border-color:white;
+    color:purple;
+}
+.button2{
+    height:45px;
+    width:100px;
+    margin-left:10px;
+    background-color:purple;
+    border-color:purple;
+    border-radius:10px;
+    color:white;
+}
+.button2:hover{
+    
+    border-color:white;
+    background-color:white;
+    color:purple;
+}
+
