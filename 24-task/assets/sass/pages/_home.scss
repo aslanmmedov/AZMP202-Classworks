@@ -1,0 +1,40 @@
+#main{
+    #new-arrivals{
+        .new-arrive{
+            margin-top:6rem;
+            margin-bottom: 3rem;
+            padding-left:12rem;
+        }
+        .cards{
+            justify-content: center;
+            
+            .card{
+                width:100%;
+                @include FlexBox();
+                flex-direction: column;
+                gap:1.3rem;
+                
+                img{
+                    width:100%;
+                    transition: 0.4s;
+                    &:hover{
+                        transform: scale(1.009);
+                    }
+                }
+                p{
+                    color:red;
+                }
+            }
+        }
+    }
+    #img-galery{
+        img1{
+            width:100%;
+            img{
+                width:100%;
+            }
+        }
+    }
+    
+    
+}

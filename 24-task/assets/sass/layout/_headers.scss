@@ -1,0 +1,74 @@
+#header {
+    #nav {
+        background-color: $white;
+
+        .navbar {
+            height: 90px;
+            @include FlexBox();
+
+            ul {
+                @include FlexBox();
+                gap: 2rem;
+
+                li {
+                    a {
+                        color: $black;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        transition: 0.6s;
+
+                        &:hover {
+                            color: $bcg-red;
+                        }
+                    }
+                }
+            }
+
+            .nav-icons {
+                @include FlexBox();
+                gap: 2rem;
+
+                i {
+                    transition: 0.6s;
+
+                    &:hover {
+                        color: $bcg-red;
+                    }
+                }
+
+            }
+        }
+    }
+
+    #banner {
+        background-color: $bgc-one;
+
+        .hero-banner {
+            .banner-content {
+                @include FlexBox();
+                flex-direction: column;
+                align-items: flex-start;
+                height:100%;
+                justify-content: center;
+                padding-left:5rem;
+                gap:2rem;
+                h1{
+                    max-width: 80%;
+                    color:$primary-color;
+                }
+                p{
+                    color:$page-gray;
+                    max-width: 70%;
+                }
+                button{
+                    margin-top:1rem;
+                    @extend %gray-bgc-button;
+                }
+            }
+
+            .col-4 {
+                padding: 0;
+            }
+        }
+    }
+}
