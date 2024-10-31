@@ -174,6 +174,10 @@ const scores = [60,75,88,75,93,45]
 // let cem = 0;
 let big = scores[0];
 for (let index = 0; index < scores.length; index++) {
+
+
+
+    
     if(scores[index] > big){
         big =scores[index]
     }
