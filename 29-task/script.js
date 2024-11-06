@@ -45,26 +45,26 @@
 
 
 
-function findWord(word,word2) {
-    let bool = 0;
-    word = word.toLowerCase();
-    word2 = word2.toLowerCase();
-    if(word.length === word2.length){
-        for (let index = 0; index < word.length; index++) {
-            for (let i = 0; i < word2.length; i++) {
-                if(word[index] === word2[i]){
-                    bool += 1;
-                }
-            }
-        }
-        if(bool = word.length){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }   
-    return false;
+// function findWord(word,word2) {
+//     let bool = 0;
+//     word = word.toLowerCase();
+//     word2 = word2.toLowerCase();
+//     if(word.length === word2.length){
+//         for (let index = 0; index < word.length; index++) {
+//             for (let i = 0; i < word2.length; i++) {
+//                 if(word[index] === word2[i]){
+//                     bool += 1;
+//                 }
+//             }
+//         }
+//         if(bool = word.length){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }   
+//     return false;
     
-}
-console.log(findWord("OlgUn","oGlu"))
+// }
+// console.log(findWord("OlgUn","oGlu"))
