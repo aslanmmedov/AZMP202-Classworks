@@ -1,0 +1,13 @@
+.cardMenu{
+    max-width:1200px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+.card{
+    width: calc((100% / 12) * 3 );
+    padding:1rem;
+}
