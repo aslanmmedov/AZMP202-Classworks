@@ -123,7 +123,7 @@ const MenuCard = ({ menuItem, setMenuItem }) => {
                         </Card>
                     </div>
 
-                )};
+                )}
 
             </div>
 
