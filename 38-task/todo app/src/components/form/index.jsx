@@ -11,15 +11,27 @@ const FormTodo = ({ todos, setTodos }) => {
                 createdAt: new Date(),
                 isCompleted: false
             }
+            
             console.log(todos)
-            setTodos([...todos, addTodo]);
-            setInput("");
+            localStorage.setItem("todos", JSON.stringify([...todos,addTodo]));
+            const players = JSON.parse(localStorage.getItem("todos"));
+            setTodos(players);
+            setInput("");   
+            
         }
 
     }
     const handleDelete = (id) => {
+        Localstorage.removeItem()
         const newTodo = todos.filter((todo) => todo.id !== id);
         setTodos(newTodo);
+    }
+    const handleClearAll = () => {
+        localstorage.removeItem("todos");
+        const players = JSON.parse(localStorage.getItem("todos"));
+        console.log(players);
+        
+        setTodos(players);  
     }
     const isComp = false;
     return (
@@ -35,10 +47,10 @@ const FormTodo = ({ todos, setTodos }) => {
                 </form>
             </div>
             <div className="buttons">
-                <button className='btn btn-all' onclick = {() => {setTodos([...todos])}}>All todos</button>
+                <button className='btn btn-all' onClick = {() => {setTodos([...todos])}}>All todos</button>
                 <button className='btn btn-completed'>Completed todos</button>
                 <button className='btn btn-pending'>Pending todos</button>
-                <button className='btn btn-clear' onClick = {() => {setTodos("")}}>Clear All</button>
+                <button className='btn btn-clear' onClick = {() => {handleClearAll}}>Clear All</button>
             </div>
 
             <div className="list">
