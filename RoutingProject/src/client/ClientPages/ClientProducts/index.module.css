@@ -1,0 +1,26 @@
+.cardHolder{
+    display:flex;
+    flex-wrap: wrap;   
+    gap:4rem;
+}
+img{
+    object-fit: contain;
+    width:100%;
+    height: 100%;
+}
+.container{
+    width:1200px;
+    margin:100px auto;
+
+}
+.inpValue{
+    margin:50px 0;
+    padding:0.5rem 1rem;
+    border:none;
+    border-radius: 10px;
+    background-color:antiquewhite;
+}
+.imgHeight{
+    width:240px !important;
+    height:300px !important;
+}
