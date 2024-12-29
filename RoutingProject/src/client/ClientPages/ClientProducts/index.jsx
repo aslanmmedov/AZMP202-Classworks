@@ -8,11 +8,13 @@ import { useNavigate } from "react-router";
 import styles from './index.module.css'
 import { FavoriteContext } from '../../../context/addfavscontext';
 import { Helmet } from 'react-helmet-async';
+import { BasketContext } from '../../../context/addbasketcontext';
 
 const ClientProducts = () => {
  const [products,setProducts] = useState([]);
  const [inpValue,setInpValue] = useState("");
  const navigate = useNavigate(null)
+ const {basket,addToBasket} = useContext(BasketContext)
  const getData = async () => {
   const data = await controller.getAllData(endpoints.products)
   setProducts(data)
@@ -67,6 +69,9 @@ const ClientProducts = () => {
               </Button><br/><br/>
               <Button color="default" variant="solid" onClick = {() => getDetail(product.id)}>
                   Detail
+              </Button>
+              <Button color="default" variant="solid" onClick = {() => addToBasket(product)}>
+                  Add to Basket
               </Button>
             </Card>
           )

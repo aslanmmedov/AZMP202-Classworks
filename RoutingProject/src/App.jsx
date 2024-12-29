@@ -6,6 +6,7 @@ import AdminDashboard from './admin/pages/DashboardAdmin'
 import EditProduct from './admin/pages/EditProduct'
 import './App.css'
 import ClientLayout from './client'
+import Basket from './client/ClientPages/Basket'
 import ClientProducts from './client/ClientPages/ClientProducts'
 import Contact from './client/ClientPages/Contact'
 import Favorites from './client/ClientPages/favorites'
@@ -25,6 +26,7 @@ function App() {
             <Route path = 'contact' element = {<Contact/>}/>
             <Route path = 'products' element = {<ClientProducts/>}/>
             <Route path = 'favorites' element = {<Favorites/>}/>
+            <Route path = 'basket' element = {<Basket/>}/>
             <Route path = 'products/:id' element = {<ProductDetail/>}/>
             <Route path = '*' element = {<NotFound/>}/>
         </Route>
