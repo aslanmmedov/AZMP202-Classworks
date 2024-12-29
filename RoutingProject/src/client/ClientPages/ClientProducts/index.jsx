@@ -7,6 +7,7 @@ const { Meta } = Card;
 import { useNavigate } from "react-router";
 import styles from './index.module.css'
 import { FavoriteContext } from '../../../context/addfavscontext';
+import { Helmet } from 'react-helmet-async';
 
 const ClientProducts = () => {
  const [products,setProducts] = useState([]);
@@ -43,6 +44,10 @@ const ClientProducts = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Products Page</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
     <div className={styles.container}>
     <input type="text" onChange={handleChange} className = {styles.inpValue} placeholder = {"search by name"}/>
     <div className={styles.cardHolder}>

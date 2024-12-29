@@ -9,6 +9,7 @@ import { Button, Card } from 'antd';
 import Meta from 'antd/es/card/Meta';
 import { useContext } from 'react';
 import { FavoriteContext } from '../../../context/addfavscontext';
+import { Helmet } from 'react-helmet-async';
 const ProductDetail = () => {
   const {favorites,toggleFavorites} = useContext(FavoriteContext)
   const [product,setProduct] = useState([]);
@@ -29,6 +30,10 @@ const ProductDetail = () => {
   }
   return (
     <>
+     <Helmet>
+        <title>{product.title}</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
     <div className={styles.container}>
     <div className={styles.cardHolder}>
           {product &&(
