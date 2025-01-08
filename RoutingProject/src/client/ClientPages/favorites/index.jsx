@@ -2,6 +2,7 @@ import { Button, Card } from 'antd'
 import Meta from 'antd/es/card/Meta'
 import React from 'react'
 import { useContext } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { useNavigate } from 'react-router-dom'
 import { FavoriteContext } from '../../../context/addfavscontext'
 import styles from '../ClientProducts/index.module.css'
@@ -15,6 +16,10 @@ const getDetail = (id) => {
 
   return (
     <>
+    <Helmet>
+        <title>Favorites Page</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
       <div className={styles.container}>
     <div className={styles.cardHolder}>
           {favorites && favorites.map((product) => (

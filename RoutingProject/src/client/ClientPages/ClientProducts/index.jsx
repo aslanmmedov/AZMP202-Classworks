@@ -7,11 +7,14 @@ const { Meta } = Card;
 import { useNavigate } from "react-router";
 import styles from './index.module.css'
 import { FavoriteContext } from '../../../context/addfavscontext';
+import { Helmet } from 'react-helmet-async';
+import { BasketContext } from '../../../context/addbasketcontext';
 
 const ClientProducts = () => {
  const [products,setProducts] = useState([]);
  const [inpValue,setInpValue] = useState("");
  const navigate = useNavigate(null)
+ const {basket,addToBasket} = useContext(BasketContext)
  const getData = async () => {
   const data = await controller.getAllData(endpoints.products)
   setProducts(data)
@@ -43,6 +46,10 @@ const ClientProducts = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Products Page</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
     <div className={styles.container}>
     <input type="text" onChange={handleChange} className = {styles.inpValue} placeholder = {"search by name"}/>
     <div className={styles.cardHolder}>
@@ -62,6 +69,9 @@ const ClientProducts = () => {
               </Button><br/><br/>
               <Button color="default" variant="solid" onClick = {() => getDetail(product.id)}>
                   Detail
+              </Button>
+              <Button color="default" variant="solid" onClick = {() => addToBasket(product)}>
+                  Add to Basket
               </Button>
             </Card>
           )

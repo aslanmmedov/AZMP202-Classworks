@@ -16,6 +16,7 @@ const ClientHeader = () => {
               <li><NavLink to="/">HOME</NavLink></li>
               <li><NavLink to="/contact">CONTACT</NavLink></li>
               <li><NavLink to="/products">PRODUCTS</NavLink></li>
+              <li><NavLink to="/basket">BASKET</NavLink></li>
               <li><NavLink to="/favorites">FAVORITES<sup>{favorites.length}</sup></NavLink></li>
             </ul>
         </div>
